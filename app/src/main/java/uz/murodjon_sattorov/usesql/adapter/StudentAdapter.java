@@ -51,22 +51,12 @@ public class StudentAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_group, parent, false);
 
-        ImageView shapeImg = view.findViewById(R.id.group_img);
         ImageView deleteGroup = view.findViewById(R.id.delete_group);
         ImageView updateGroup = view.findViewById(R.id.update_group);
         TextView groupName = view.findViewById(R.id.group_name);
-        TextView groupLatter = view.findViewById(R.id.group_latter);
 
         StudentModel studentModel = getItem(position);
         groupName.setText(studentModel.getName());
-        groupLatter.setText(studentModel.getName().toUpperCase().charAt(0) + "");
-
-        int[] colors = {R.color.color1, R.color.color2, R.color.color3, R.color.color4,
-                R.color.color5, R.color.color6, R.color.color7};
-
-        Random random = new Random();
-
-        shapeImg.setBackgroundResource(colors[random.nextInt(6)]);
 
         ConstraintLayout constraintLayout = view.findViewById(R.id.layout);
         constraintLayout.setOnClickListener(v -> {
