@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/group_img"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="12dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/circleImg" />
+
+    <TextView
+        android:id="@+id/group_latter"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/group_img"
+        app:layout_constraintEnd_toEndOf="@+id/group_img"
+        app:layout_constraintStart_toStartOf="@+id/group_img"
+        app:layout_constraintTop_toTopOf="@+id/group_img" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:maxLength="20"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/group_img"
+        app:layout_constraintEnd_toStartOf="@+id/update_group"
+        app:layout_constraintStart_toEndOf="@+id/group_img"
+        app:layout_constraintTop_toTopOf="@+id/group_img" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/delete_group"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackground"
+        android:padding="4dp"
+        android:src="@drawable/ic_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/circleImg" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/update_group"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackground"
+        android:padding="4dp"
+        android:src="@drawable/ic_edit_24"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_group"
+        app:layout_constraintEnd_toStartOf="@+id/delete_group"
+        app:layout_constraintTop_toTopOf="@+id/delete_group"
+        app:shapeAppearance="@style/circleImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
