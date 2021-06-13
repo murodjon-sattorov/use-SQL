@@ -8,7 +8,7 @@ Data exchange between two tables
 
 ## View data
 
-![View data](https://i.postimg.cc/0NDbN5d4/Screenshot-2021-06-14-00-16-23-032-uz-murodjon-sattorov-usesql.jpg)
+![View data](https://i.postimg.cc/Gth2zFw0/Screenshot-2021-06-14-00-17-04-316-uz-murodjon-sattorov-usesql.jpg)
 
 
 ## Author
